@@ -44,6 +44,15 @@ if (lines.length !== 2) {
   process.exit(1);
 }
 
+for (const [i, line] of lines.entries()) {
+  if (line !== line.trim()) {
+    console.error(
+      `ERROR: line ${i + 1} has leading or trailing whitespace.`
+    );
+    process.exit(1);
+  }
+}
+
 const sentenceEndings = (ENTRY.match(/[.!?]/g) ?? []).length;
 if (sentenceEndings !== 2) {
   console.error(
