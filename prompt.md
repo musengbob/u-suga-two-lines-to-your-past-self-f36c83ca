@@ -1,0 +1,1 @@
+Write two lines to your past self: line one warns about one specific moment in a single sentence; line two says in one sentence why that moment mattered and what changed because of it. The program outputs the two lines deterministically — the same text on every run, with no randomness, network, or clock involved.
